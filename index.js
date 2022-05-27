@@ -2,33 +2,24 @@
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
+const fcFirsUser = ['Yellow', 'Pink', 'White', 'Purple'];
+const frFirstUser = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"]
+
 // First User Object
 const firstUser = {
-    name            : 'Monica',
-    gender          : 'Female',
-    age             : 17,
-    email           : 'monica@dingdong.com',
-    favoriteColor    : new Set(['Yellow', 'Pink', 'White', 'Purple']),
-    isHavePet       : 'Yes',
-    education       :
+    name: 'Monica',
+    gender: 'Female',
+    age: 17,
+    email: 'monica@dingdong.com',
+    favoriteColor: [...new Set(fcFirsUser)],
+    isHavePet: 'Yes',
+    education:
     {
-        name    : 'SD 01',
-        city    : 'Jakarta',
+        name: 'SD 01',
+        city: 'Jakarta',
         graduate: 2016
     },
-    favoriteRestaurant: new Set([
-        "Bento",
-        "Sushi",
-        "Pancake",
-        "Eggy",
-        "Tempura",
-        "Bento",
-        "Eggy",
-        "Padang",
-        "Tteok",
-        "Sushi",
-        "Sushi",
-    ]),
+    favoriteRestaurant: [...new Set(frFirstUser)],
 };
 
 // Second User Object
