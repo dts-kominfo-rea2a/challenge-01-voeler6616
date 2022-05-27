@@ -2,8 +2,13 @@
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
-const fcFirsUser = ['Yellow', 'Pink', 'White', 'Purple'];
-const frFirstUser = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"]
+// unique key in array fc(favorite color) & fr(favorite restaurant) first user 
+const fcFirstUser = ['Yellow', 'Pink', 'White', 'Purple'];
+const frFirstUser = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
+
+// unique key in array fc(favorite color) & fr(favorite restaurant) second user 
+const fcSecondUser = ['Blue', 'Black', 'Grey'];
+const frSecondUser = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
 
 // First User Object
 const firstUser = {
@@ -11,7 +16,7 @@ const firstUser = {
     gender: 'Female',
     age: 17,
     email: 'monica@dingdong.com',
-    favoriteColor: [...new Set(fcFirsUser)],
+    favoriteColor: [...new Set(fcFirstUser)],
     isHavePet: 'Yes',
     education:
     {
@@ -28,7 +33,7 @@ const secondUser = {
     gender: 'Male',
     age: 23,
     email: 'wendy@dingdong.com',
-    favoriteColor: new Set(['Blue', 'Black', 'Grey']),
+    favoriteColor: [...new Set(fcSecondUser)],
     isHavePet: 'No',
     education:
     {
@@ -36,17 +41,7 @@ const secondUser = {
         city: 'Jakarta',
         graduate: 2010
     },
-    favoriteRestaurant: new Set([
-        "Tempura",
-        "Bento",
-        "Sushi",
-        "Pancake",
-        "Padang",
-        "Katsu",
-        "Geprek",
-        "Pancake",
-        "Eggy",
-    ]),
+    favoriteRestaurant: [...new Set(frSecondUser)],
 };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
